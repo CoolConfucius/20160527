@@ -40,6 +40,9 @@
               <Button text="test"></Button>
             </contentRight>
           </Bar>
+          <Table id="table">
+            
+          </Table>
           <!-- <List items="{propertyTypes}">
             <ObjectListItem
               title="{description/en}" >
