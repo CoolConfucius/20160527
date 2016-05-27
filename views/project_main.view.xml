@@ -64,7 +64,12 @@
               </Column>
             </columns>
             <ColumnListItem>
-              
+              <cells>
+                <Label text="{name}" />
+                <Label text="{email}" />
+                <Label text="{age}" />
+                <Label text="{eyeColor}" />
+              </cells>
             </ColumnListItem>
 
           </Table>
