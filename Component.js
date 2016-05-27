@@ -10,7 +10,7 @@ sap.ui.core.UIComponent.extend("project.Component", {
     "version" : "1.0", 
     "includes" : [],
     "dependencies" : {
-      "libs" : ["sap.m", "sap.viz.ui5"],
+      "libs" : ["sap.m"/*, "sap.viz.ui5"*/],
       "components" : []
     }, 
 
