@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project</title>
+  <script id='sap-ui-bootstrap' 
+  type="text/javascript"
+  src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js' 
+  data-sap-ui-preload='sync'
+  data-sap-ui-theme='sap_bluecrystal' 
+  data-sap-ui-xx-bindingSyntax="complex" 
+  data-sap-ui-libs='sap.m,sap.ui.ux3,sap.ui.unified' 
+  >
+  </script>
+
+  <script>
+  sap.ui.getCore().attachInit(function() {
+
+    jQuery.sap.registerModulePath("project", "./" );
+    jQuery.sap.require("jquery.sap.resources");
+    jQuery.sap.require("sap.ui.core.IconPool");
+
+    console.log("TEST");
+    var shell = new sap.m.Shell("shell", {
+      title: "project", 
+      appWidthLimited: false,
+      app: new sap.ui.core.ComponentContainer({
+        name: "project"
+      })
+    });
+    shell.placeAt("content"); 
+    
+  })
+
+  </script>
+</head>
+<body class='sapUiBody' role="application">
+  <div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+  controllerName="project.views.project_main"
+  xmlns="sap.m">
+  <SplitApp id="SplitAppDemo" initialDetail="detail" initialMaster="master">
+    <masterPages>
+      <Page id="master" title="Thing Types ({/count})" icon="sap-icon://action" class="sapUiStdPage">
+        <content>
+          <!-- <Label text="test"></Label> -->
+          <!-- <List id="list" items="{/value}" itemPress="onListItemPress" updateFinished="selectFirstItem"> -->
+          <List id="list" items="{/}" itemPress="onListItemPress" updateFinished="selectFirstItem">
+            <!-- <StandardListItem title="{name}" type="Active" custom:ttID="{name}"/> -->
+            <CustomListItem id="item" type="Active">
+              <content>
+                <VBox>
+                  <items>
+                    <Label text="{name}" />
+                    <Label text="{email}" />
+                    <Label text="{company}" />
+                  </items>
+                </VBox>
+              </content>
+            </CustomListItem>
+          </List>
+          <!-- <Label text="test"></Label>
+          <Label text="test"></Label>
+          <Label text="test"></Label> -->
+        </content>
+      </Page>
+    </masterPages>
+    <detailPages>
+      <Page id="detail" title="Detail" class="sapUiStdPage">
+        <content>
+          <List items="{propertyTypes}">
+            <ObjectListItem
+              title="{description/en}" >
+              <attributes>
+                <ObjectAttribute text="ID: {id}" />
+                <ObjectAttribute text="Type: {propertySetType}" />
+              </attributes>
+            </ObjectListItem>
+          </List>
+        </content>
+      </Page>
+    </detailPages>
+  </SplitApp>
+</mvc:View>
