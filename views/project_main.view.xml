@@ -40,7 +40,7 @@
               <Button text="test"></Button>
             </contentRight>
           </Bar>
-          <Table id="table">
+          <Table id="table" items="{/}">
             <columns>
               <Column>
                 <header>
