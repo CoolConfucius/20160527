@@ -7,6 +7,8 @@ sap.ui.controller("project.views.project_main", {
     // this.list.attachItemPress(this.listSelection, this);
     this.byId("list").attachItemPress(this.listSelection, this);
     this.fetchdata(); 
+    var oVizFrame = this.getView().byId("idcolumn");
+    var oModel = new sap.ui.model.json.JSONModel();
   },
 
   // _handleRouteMatched:function(evt){
