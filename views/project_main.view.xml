@@ -62,8 +62,11 @@
                   <Label text="Eye Color" />
                 </header>
               </Column>
-
             </columns>
+            <ColumnListItem>
+              
+            </ColumnListItem>
+
           </Table>
           <!-- <List items="{propertyTypes}">
             <ObjectListItem
