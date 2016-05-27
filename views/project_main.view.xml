@@ -32,7 +32,15 @@
     <detailPages>
       <Page id="detail" title="Detail" class="sapUiStdPage">
         <content>
-          <List items="{propertyTypes}">
+          <Bar>
+            <contentLeft>
+              <Label text="test"></Label>
+            </contentLeft>
+            <contentRight>
+              <Button text="test"></Button>
+            </contentRight>
+          </Bar>
+          <!-- <List items="{propertyTypes}">
             <ObjectListItem
               title="{description/en}" >
               <attributes>
@@ -40,7 +48,7 @@
                 <ObjectAttribute text="Type: {propertySetType}" />
               </attributes>
             </ObjectListItem>
-          </List>
+          </List> -->
         </content>
       </Page>
     </detailPages>
