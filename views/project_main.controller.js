@@ -9,6 +9,15 @@ sap.ui.controller("project.views.project_main", {
     this.fetchdata(); 
     var oVizFrame = this.getView().byId("idcolumn");
     var oModel = new sap.ui.model.json.JSONModel();
+    var data = {
+        'Population' : [
+                {"Year": "2010","Value": "158626687"},
+                {"Year": "2011","Value": "531160986"},
+                {"Year": "2012","Value": "915105168"},
+                {"Year": "2013","Value": "1093786762"},
+                {"Year": "2014","Value": "1274018495"},
+               ]};
+    oModel.setData(data);
   },
 
   // _handleRouteMatched:function(evt){
