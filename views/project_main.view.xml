@@ -41,7 +41,13 @@
             </contentRight>
           </Bar>
           <Table id="table">
-            
+            <columns>
+              <Column>
+                <header>
+                  <Label text="{name}" />
+                </header>
+              </Column>
+            </columns>
           </Table>
           <!-- <List items="{propertyTypes}">
             <ObjectListItem
