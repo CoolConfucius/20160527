@@ -88,5 +88,6 @@ sap.ui.controller("project.views.project_main", {
     this.tablearray.push(context.getObject())
     this.otableModel.setData(this.tablearray);
     // this.table.setModel(this.otableModel);
+    this.byId("table").setModel(this.otableModel);
   }
 })
