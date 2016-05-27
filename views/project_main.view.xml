@@ -44,9 +44,25 @@
             <columns>
               <Column>
                 <header>
-                  <Label text="{name}" />
+                  <Label text="Name" />
                 </header>
               </Column>
+              <Column>
+                <header>
+                  <Label text="Email" />
+                </header>
+              </Column>
+              <Column>
+                <header>
+                  <Label text="Age" />
+                </header>
+              </Column>
+              <Column>
+                <header>
+                  <Label text="Eye Color" />
+                </header>
+              </Column>
+
             </columns>
           </Table>
           <!-- <List items="{propertyTypes}">
