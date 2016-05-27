@@ -83,6 +83,9 @@
               </attributes>
             </ObjectListItem>
           </List> -->
+          <viz:VizFrame xmlns="sap.viz" id="idcolumn">
+            
+          </viz:VizFrame>
         </content>
       </Page>
     </detailPages>
