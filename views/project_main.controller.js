@@ -4,10 +4,8 @@ sap.ui.controller("project.views.project_main", {
 
   onInit: function() {
     window.onbeforeunload = function(){
-      // return "Back button is not available!";
-      return window.history.forward();
+      return "Back button is not available!";
     }
-    // window.onunload=function(){null};
     this.app = sap.ui.getCore().byId("project-app");
     // this.list.attachItemPress(this.listSelection, this);
     this.byId("list").attachItemPress(this.listSelection, this);
