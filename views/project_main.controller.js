@@ -18,10 +18,14 @@ sap.ui.controller("project.views.project_main", {
     //      return false;    
     //    }
     // }
-    window.onunload = function(){
-      // return "Back button is not available!";
-      window.history.forward();
-    }
+    // window.onbeforeunload = function(){
+    //   // return "Back button is not available!";
+    //   console.log("here?");
+    //   window.history.forward();
+    // }
+    // function preventBack(){window.history.forward();}
+    // setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
     this.app = sap.ui.getCore().byId("project-app");
     // this.list.attachItemPress(this.listSelection, this);
     this.byId("list").attachItemPress(this.listSelection, this);
