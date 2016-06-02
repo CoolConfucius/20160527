@@ -3,9 +3,19 @@ sap.ui.controller("project.views.project_main", {
   //bus : sap.ui.getCore().getEventBus(),
 
   onInit: function() {
-    window.onbeforeunload = function(){
-      // return "Back button is not available!";
-      window.history.forward(1);
+    // window.onbeforeunload = function(){
+    //   // return "Back button is not available!";
+    //   window.history.forward(1);
+    // }
+    document.onmousedown=disableclick;
+    status="Right Click Disabled";
+    function disableclick(event)
+    {
+      if(event.button==2)
+       {
+         alert(status);
+         return false;    
+       }
     }
     this.app = sap.ui.getCore().byId("project-app");
     // this.list.attachItemPress(this.listSelection, this);
