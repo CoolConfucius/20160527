@@ -4,7 +4,7 @@ sap.ui.controller("project.views.project_main", {
 
   onInit: function() {
     window.onbeforeunload = function(){
-      return "Back button is not available!";
+      // return "Back button is not available!";
       window.history.forward(1);
     }
     this.app = sap.ui.getCore().byId("project-app");
