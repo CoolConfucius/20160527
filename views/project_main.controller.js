@@ -3,29 +3,11 @@ sap.ui.controller("project.views.project_main", {
   //bus : sap.ui.getCore().getEventBus(),
 
   onInit: function() {
-    // window.onbeforeunload = function(){
-    //   // return "Back button is not available!";
-    //   window.history.forward(1);
-    // }
-    // document.onmousedown=disableclick;
-    // // status="Right Click Disabled";
-    // function disableclick(event)
-    // {
-    //   console.log(event);
-    //   if(event.button==2)
-    //    {
-    //      // alert(status);
-    //      return false;    
-    //    }
-    // }
-    // window.onbeforeunload = function(){
-    //   // return "Back button is not available!";
-    //   console.log("here?");
-    //   window.history.forward();
-    // }
-    // function preventBack(){window.history.forward();}
-    // setTimeout("preventBack()", 0);
-    window.onunload=function(){null};
+    window.onbeforeunload = function(){
+      // return "Back button is not available!";
+      return window.history.forward();
+    }
+    // window.onunload=function(){null};
     this.app = sap.ui.getCore().byId("project-app");
     // this.list.attachItemPress(this.listSelection, this);
     this.byId("list").attachItemPress(this.listSelection, this);
