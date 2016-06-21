@@ -29,6 +29,17 @@
           <!-- <Label text="test"></Label>
           <Label text="test"></Label>
           <Label text="test"></Label> -->
+          <IconTabBar>
+            <items>
+              <IconTabFilter text="Getting Started">
+                <Button text="Say Hello"></Button>
+              </IconTabFilter>
+              <IconTabFilter text="Second Tab Filter">
+                
+              </IconTabFilter>
+            </items>
+
+          </IconTabBar>
         </content>
       </Page>
     </masterPages>
